@@ -15,16 +15,35 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zoanlogia.atable"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.zoanlogia.atable"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2519d01c-7fb1-4c5d-af50-21e6f56d2479"
+      }
+    },
+    "owner": "zoanlogia",
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/UberMoveBold.otf",
+            "./assets/fonts/UberMoveMedium.otf"
+          ]
+        }
+      ]
+    ]
   }
 }
